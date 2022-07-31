@@ -1,3 +1,4 @@
 env/*
 api/methods/__pycache__/*
 __pycache__/*
+api/__pycache__/*
