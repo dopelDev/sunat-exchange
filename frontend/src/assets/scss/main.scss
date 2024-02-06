@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "~bulma/bulma";
+
+// Color Scheme
+.color1 {
+	background-color: #12486B;
+}
+.color2 {
+	background-color: #419197;
+}
+.color3 {
+	background-color: #78D6C6;
+}
+.color4 {
+	background-color: #F5FCCD;
+}
+
+.text-color1 {
+	color: #12486B;
+}
+.text-color2 {
+	color: #419197;
+}
+.text-color3 {
+	color: #78D6C6;
+}
+.text-color4 {
+	color: #F5FCCD;
+}
+
+// Fonts
+@font-face {
+	font-family: '3270NerdFont-regular';
+	src : url('~Assets/fonts/3270NerdFont-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: '3270NerdFont-Condensed';
+	src : url('~Assets/fonts/3270NerdFont-Condensed.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+.font-3270 {
+	font-family: '3270NerdFont-regular';
+}
+.font-3270-condensed {
+	font-family: '3270NerdFont-Condensed';
+}
+
