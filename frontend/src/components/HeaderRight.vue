@@ -1,15 +1,15 @@
 <template>
-	<div class="container is-fluid p-5 color2" v-if="deviceType === 'desktop' ">
-		<div class="columns is-desktop p-1 mx-4">
+	<div v-if="deviceType === 'desktop' ">
+		<div class="columns is-desktop my-4">
 			<div class="column is-2">
 				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                      󰍉">
 			</div>
 			<div class="column is-8">
 				<h1 class="title is-3 has-text-centered text-color4" id="rounded">Dashboard</h1>
 			</div>
-			<div class="column is-1">
+			<div class="column">
 				<div class="columns ml-6">
-					<div class="column mr-6">
+					<div class="column">
 						<span class="icon-text">
 							<span class="icon">
 								<i class="is-clickable" id="bell">  </i>
