@@ -4,10 +4,8 @@ export function useDeviceType() {
 	const deviceType = ref('desktop');
 
 	const checkDeviceType = () => {
-		if (window.innerWidth < 768) {
+		if (window.innerWidth < 1024) {
 			deviceType.value = 'mobile'
-		} else if (window.innerWidth < 1024) {
-			deviceType.value = 'tablet'
 		} else {
 			deviceType.value = 'desktop'
 		}

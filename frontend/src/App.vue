@@ -18,6 +18,18 @@ name: 'App',
 		Footer,
 		Main
 	},
+	mounted() {
+		const link = document.createElement('link');
+		link.rel = 'icon';
+		link.type = 'image/svg+xml';
+		link.href = require('@/assets/images/favicon.png');
+		document.head.appendChild(link);
+		document.title = 'Sunat Exchange';
+	},
+	data() {
+		return {
+		};
+	},
 }
 </script>
 
