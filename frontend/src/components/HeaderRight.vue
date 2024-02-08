@@ -1,14 +1,14 @@
 <template>
 	<div v-if="deviceType === 'desktop' ">
-		<div class="columns is-desktop my-4">
-			<div class="column is-2">
-				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                      󰍉">
+		<div class="columns is-desktop my-4 ml-6" id="fix-columns">
+			<div class="column is-2 ml-6">
+				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                󰍉">
 			</div>
-			<div class="column is-8">
-				<h1 class="title is-3 has-text-centered text-color4" id="rounded">Dashboard</h1>
+			<div class="column is-6">
+				<h1 class="title is-3 has-text-centered text-color4">Dashboard</h1>
 			</div>
 			<div class="column">
-				<div class="columns ml-6">
+				<div class="columns" id="fix-columns-icon">
 					<div class="column">
 						<span class="icon-text">
 							<span class="icon">
@@ -85,9 +85,6 @@
 	font-weight: bold;
 	color: #12486B !important;
 }
-#rounded {
-	border-radius: 20px;
-}
 #bell {
 	font-size: 1.4rem;
 	color: #F5FCCD;
@@ -100,5 +97,13 @@
 }
 .dropdown {
 	z-index: 1000;
+}
+#fix-columns {
+	width: 100%;
+	padding: 0px 80px 0px 80px;
+}
+#fix-columns-icon {
+	padding: 0px 0px 0px 180px;
+	margin: 0px 80px 0px 80px;
 }
 </style>

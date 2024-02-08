@@ -1,13 +1,13 @@
 <template>
 	<div class="container is-fluid">
 		<div class="tile is-ancestor">
-			<div class="tile is-1 color3" id="fix-flex">
+			<div class="tile is-1 color3" id="fix-tile">
 				<div class="tile is-parent is-vertical">
 						<StickyBar />
 				</div>
 			</div>
 			<div class="tile">
-				<div class="tile is-parent is-vertical">
+				<div class="tile is-parent is-vertical" id="fix-tile-parent">
 					<div class="tile is-child color2">
 						<HeaderRight />
 					</div>
@@ -33,9 +33,16 @@
 </script>
 
 <style lang="scss">
-#fix-flex {
+#fix-tile {
 	position: absolute;
 	left: 0;
 	right: 0;
+	z-index: 100;
+}
+#fix-tile-parent {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 </style>
