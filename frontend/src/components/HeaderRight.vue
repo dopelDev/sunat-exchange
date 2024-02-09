@@ -1,10 +1,10 @@
 <template>
-	<div v-if="deviceType === 'desktop' ">
-		<div class="columns is-desktop my-4 ml-6" id="fix-columns">
-			<div class="column is-2 ml-6">
-				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                󰍉">
+	<div v-if="deviceType === 'desktop' " :id="!responsiveState ? 'mainDiv': 'mainDiv-responsive'">
+		<div class="columns is-desktop">
+			<div class="column is-2">
+				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                    󰍉">
 			</div>
-			<div class="column is-6">
+			<div class="column is-6 mt-1 ml-6">
 				<h1 class="title is-3 has-text-centered text-color4">Dashboard</h1>
 			</div>
 			<div class="column">
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-	import { useDeviceType } from '@/composables/global.js'
+	import { useDeviceType, responsiveState } from '@/composables/global.js'
 	export default {
 		name: 'Header',
 		data() {
@@ -52,7 +52,6 @@
 				isDropdownActive: false
 			}
 		},
-
 		mounted() {
 			document.addEventListener('click', this.handleClickOutside);
 		},
@@ -71,8 +70,8 @@
 		},
 		setup() {
 			const { deviceType } = useDeviceType();
-			return { deviceType };
-		}
+			return { deviceType, responsiveState };
+		},
 	}
 </script>
 
@@ -100,10 +99,20 @@
 }
 #fix-columns {
 	width: 100%;
-	padding: 0px 80px 0px 80px;
+	padding: 0px 100px 0px 100px;
 }
 #fix-columns-icon {
-	padding: 0px 0px 0px 180px;
+	padding: 0px 80px 0px 0px;
 	margin: 0px 80px 0px 80px;
+}
+#mainDiv {
+	padding: 0px 0px 0px 50px;
+	margin: 30px 100px 30px 100px;
+	transition: 0.5s ease;
+}
+#mainDiv-responsive {
+	padding: 0px 0px 0px 250px;
+	margin: 20px 50px 20px 50px;
+	transition: 0.5s ease;
 }
 </style>
