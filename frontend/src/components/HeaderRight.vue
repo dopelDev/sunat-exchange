@@ -2,10 +2,10 @@
 	<div v-if="deviceType === 'desktop' " :id="!responsiveState ? 'mainDiv': 'mainDiv-responsive'">
 		<div class="columns is-desktop">
 			<div class="column is-2">
-				<input class="input is-rounded custom-placeholder color3 text-color1" type="text" placeholder="Search...                    󰍉">
+				<input class="input is-rounded custom-placeholder color3" type="text" placeholder="Search...                    󰍉">
 			</div>
 			<div class="column is-6 mt-1 ml-6">
-				<h1 class="title is-3 has-text-centered text-color4">Dashboard</h1>
+				<h1 class="title is-3 has-text-centered text-color1">Dashboard</h1>
 			</div>
 			<div class="column">
 				<div class="columns" id="fix-columns-icon">
@@ -86,13 +86,13 @@
 }
 #bell {
 	font-size: 1.4rem;
-	color: #F5FCCD;
+	color: #12486B;
 	font-style: normal !important;
 }
 #user {
 	font-style: normal !important;
 	font-size: 1.4rem;
-	color: #F5FCCD;
+	color: #12486B;
 }
 .dropdown {
 	z-index: 1000;
