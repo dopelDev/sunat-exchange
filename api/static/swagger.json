@@ -1,0 +1,38 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Ejemplo de API Flask",
+    "description": "API para demostrar la integración de Swagger UI con Flask",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/v1/data": {
+      "get": {
+        "summary": "Obtiene los datos de la tasa",
+        "description": "Devuelve la fecha, tasa de venta y tasa de compra.",
+        "responses": {
+          "200": {
+            "description": "Éxito"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Saludo inicial",
+        "description": "Devuelve un saludo.",
+        "responses": {
+          "200": {
+            "description": "Éxito"
+          }
+        }
+      }
+    }
+  }
+}
+
